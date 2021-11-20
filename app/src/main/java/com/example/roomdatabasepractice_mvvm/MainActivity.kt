@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     fun getData() {
         lifecycleScope.launch {
-            database.contactDao().insertContact(Contact(0, "Mary", "77777777", Date()))
+            database.contactDao().insertContact(Contact(0, "Mary", "77777777", Date(), isActive = 1))
         }
 
     }
